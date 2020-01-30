@@ -1,0 +1,5 @@
+Exception during training: 'num_classes'
+Traceback (most recent call last):
+  File "/opt/program/train", line 164, in train
+    num_classes = trainingParams['num_classes']
+KeyError: 'num_classes'
