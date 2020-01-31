@@ -18,8 +18,16 @@ NUM_CLASSES=2
 prefix = '/opt/ml/'
 model_path = os.path.join(prefix, 'model')#mask_rcnn_model_saved
 
+# Global_model = get_model_instance_segmentation(NUM_CLASSES)
+# device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+# Global_model.load_state_dict(torch.load(os.path.join(model_path,'mask_rcnn_model_saved'), \
+#                                                              map_location=device))
+
 class ScoringService(object):
-    model = None                # Where we keep the model when it's loaded
+    
+    
+    # Where we keep the model when it's loaded
+    model = None#Global_model
 
 
     @classmethod
